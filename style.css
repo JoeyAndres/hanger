@@ -1,0 +1,52 @@
+#loginForm{
+    padding: 16px;
+    width: 512px;
+    height: 128px;
+    background-color: #3498DB;
+    display: table;
+    border-radius: 8px;
+}
+
+.wrapper01{
+    display: table-row;
+}
+
+#passwordLabel{
+    color: #ECF0F1;
+    display: table-cell;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+}
+
+#passInput{
+    font-size: 1.2em;
+    display: table-cell;
+    height: 1.2em;
+    width: 100%;
+}
+
+.dummy{
+    display: table-cell;
+}
+
+#loginButton{
+    margin-top: 16px;
+    width: 128px;
+    height: 48px;
+    font-size: 1.2em;
+    display: table-cell;
+    float: right;
+}
+
+#errorMsg{
+    padding: 10px;
+    width: 200px;
+    height: 1.2em;
+    background-color: #E74C3C;
+    font-size: 1.2em;
+    color: #ECF0F1;
+    border-radius: 4px;
+    position: absolute;
+}

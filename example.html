@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hanger Example</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="hanger.js"></script>
+	</head>
+	
+	<body>
+		<div id="page">
+			<div id="content">
+				<form id="loginForm">
+					<div class="wrapper01">
+						<div id="passwordLabel">Password:</div>
+						<input type="password" name="password" size="15" maxlength="30" id="passInput" class=""/>
+					</div>
+					<div class="wrapper01">
+						<div class="dummy">
+						</div>
+						<button type="button" id="loginButton">Login</button>
+					</div>
+				</form>
+			</div>
+		</div>		
+	</body>
+	<div id="errorMsg">
+		No password inserted.
+	</div>
+	<script>
+	$(window).load(function(){
+		var h = new hanger("#loginForm", "#errorMsg", Edge.right);
+		$("#loginButton").click(function(){
+			h.hang(128).delay(1000, function(){h.unHang(128);});
+		});
+	});
+	</script>
+</html>
